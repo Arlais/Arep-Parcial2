@@ -10,14 +10,14 @@ public class MathServices {
         get("/cos", (req, res) ->{
             String input=req.queryParams("value");
             Double valor=cos(Double.parseDouble(input));
-            return "{\n\n\"operation\": \"cos\",\n\"input\": "+ input +",\n\n\"output\": "+ valor +"\n\n}";
-        }
+            return new response("cos",input,valor);
+        }, new JsonTransformer()
         );
         get("/ln", (req, res) ->{
-                    String input=req.queryParams("value");
-                    Double valor=ln(Double.parseDouble(input));
-                    return "{\n\n\"operation\": \"ln\",\n\"input\": "+ input +",\n\n\"output\": "+ valor +"\n\n}";
-                }
+                String input=req.queryParams("value");
+                Double valor=ln(Double.parseDouble(input));
+                return new response("ln",input,valor);
+            }, new JsonTransformer()
         );
     }
 
