@@ -14,7 +14,11 @@ java and maven
 
 ## Running the tests
 
-The video showing the test is not on this repo(yet) but you can ask for it
+The video showing the tests is not on this repo(yet) but you can ask for it
+
+[test1](https://www.youtube.com/watch?v=KX8XU3oBbIs)
+[test2](https://www.youtube.com/watch?v=4SJq0gW7aCE)
+
 
 ### Break down into end to end tests
 
